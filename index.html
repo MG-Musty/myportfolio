@@ -1,19 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="/images/favi.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="Looking for a software developer, am a fit to that software developer position">
+    <meta name="author" content="Mustapha Aliyu Galadima">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
     <link href="styles.css" rel="stylesheet">
+
+    <!--Favicon for this project-->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="img/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="img/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="icon" type="image/x-icon" href="/images/favi.ico">
+
     <title>My Portfolio</title>
+
 </head>
-<body style="background-color: black; width: 100%;">
+<body style="background-color: black; width: 100%; height: 100vh;">
     <!--The nav-bar is a collapsing menu-bar-->
     <div class="collapse" id="navbarToggleExternalContent">
         <div class="bg-dark p-4">
           <h5 class="text-white h4">MUSTAPHA ALIYU GALADIMA</h5>
-          <span class="text-muted">My career as a Soft-ware Engineer.</span>
+          <span class="text-muted">My career as a Soft-ware Developer.</span>
           <!--Here I included the links required for other pages-->
         <ul class="navbar-nav">
             <li class="nav-item">
@@ -27,6 +43,9 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blogs.html">Blogs</a>
             </li>
         </ul>
         </div>
@@ -45,7 +64,10 @@
       </header>
   </div>
 
-    <section>
+    <section style="@media (max-width: 440px) {
+      display: flex;
+      flex-direction: row;
+    }">
       <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -53,7 +75,10 @@
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
         </div>
-        <div class="carousel-inner">
+        <div class="carousel-inner" style="@media (max-width: 440px) {
+          display: flex;
+          flex-direction: row;
+        }">
           <div class="carousel-item active">
             <img src="images/bg1.jpg" class="d-block" alt="bg" style="width: 30%;">
             <div class="carousel-caption d-none d-md-block">
@@ -108,7 +133,7 @@
 
       <hr style="color:beige">
       <footer class="text-center">
-            Copy right <span>&copy; 2022 All Rights Reserved</span>
+            Copy right <span>&copy; 2023 All Rights Reserved</span>
       </footer>
 
 </body>
